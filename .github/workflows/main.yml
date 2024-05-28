@@ -1,0 +1,19 @@
+name: sample workflow1
+
+on:
+  schedule:
+    -cron:'/15 * * * *'
+
+jobs:
+  job_name:
+    name: Job1
+    runs-on: ubuntu-latest
+    steps:
+      - name: Step 1
+        run: echo"hello world"
+      - name: Step 2
+        run: echo "hello universe"
+
+
+
+
